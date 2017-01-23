@@ -13,6 +13,10 @@ class GamersController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @gamer = Gamer.find_by_id(params[:id])
+  end
+
   private
 
   def gamer_params
