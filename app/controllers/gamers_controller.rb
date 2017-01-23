@@ -4,4 +4,8 @@ class GamersController < ApplicationController
     @gamers = Gamer.all
   end
 
+  def new
+    @gamers = Gamer.new
+  end
+
 end
