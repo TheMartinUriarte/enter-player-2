@@ -5,7 +5,7 @@ class GamersController < ApplicationController
   end
 
   def new
-    @gamers = Gamer.new
+    @gamer = Gamer.new
   end
 
 end
