@@ -1,0 +1,26 @@
+Sign Up
+
+<%= form_for @gamers do |f| %>
+  <div>
+    <%= f.text_field :username, placeholder: "username" %>
+  </div>
+  <div>
+    <%= f.text_field :first_name, placeholder: "First Name" %>
+  </div>
+  <div>
+    <%= f.text_field :last_name, placeholder: "Last Name" %>
+  </div>
+  <div>
+    <%= f.text_field :email, placeholder: "Email" %>
+  </div>
+  <div>
+    <%= f.text_field :birthday, placeholder: "Birthday" %>
+  </div>
+  <div>
+    <%= f.text_field :password, placeholder: "Password" %>
+  </div>
+  <div>
+    <%= f.text_field :password_confirmation, placeholder: "Password Confirmation" %>
+  </div>
+  <%= f.submit "Sign Up" %>
+<% end %>
