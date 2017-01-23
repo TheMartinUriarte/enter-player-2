@@ -6,8 +6,7 @@ class CreateGamers < ActiveRecord::Migration[5.0]
       t.string :last_name
       t.string :email
       t.integer :birthday
-      t.string :password
-      t.string :password_confirmation
+      t.string :password_digest
 
       t.timestamps
     end
