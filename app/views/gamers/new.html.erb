@@ -19,5 +19,8 @@ Sign Up
   <div>
     <%= f.password_field :password_digest, placeholder: "Password" %>
   </div>
+  <div>
+    <%= f.password_field :password_confirmation, placeholder: "Password Confirmation" %>
+  </div>
   <%= f.submit "Sign Up" %>
 <% end %>
