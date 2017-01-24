@@ -10,7 +10,8 @@ class GamersController < ApplicationController
 
   def create
     @gamer = Gamer.create(gamer_params)
-    redirect_to root_path
+    login(@gamer)
+    redirect_to @gamer
   end
 
   def show
