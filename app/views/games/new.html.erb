@@ -1,0 +1,15 @@
+<%= form_for @game do |f| %>
+  <div>
+    <%= f.text_field :title, placeholder: "Title" %>
+  </div>
+  <div>
+    <%= f.text_field :genre, placeholder: "Genre" %>
+  </div>
+  <div>
+    <%= f.text_field :rating, placeholder: "Rating" %>
+  </div>
+  <div>
+    <%= f.text_field :platform, placeholder: "Platform" %>
+  </div>
+  <%= f.submit %>
+<% end %>
