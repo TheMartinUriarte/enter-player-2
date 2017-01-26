@@ -5,7 +5,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-    gamer_params = params.require(:gamer).permit(:email, :password_digest)
     @gamer = Gamer.confirm(gamer_params)
     if @gamer
       login(@gamer)
@@ -21,6 +20,13 @@ class SessionsController < ApplicationController
     logout
     flash[:notice] = "Succesfully logged out."
     redirect_to root_path
+  end
+
+  private
+
+  def gamer_params
+    params.require(:gamer).permit(:username, :first_name, :last_name, :email,
+    :birthday, :password)
   end
 
 end

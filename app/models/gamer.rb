@@ -6,6 +6,6 @@ class Gamer < ApplicationRecord
 
   def self.confirm(params)
     @gamer = Gamer.find_by({email: params[:email]})
-    @gamer ? @gamer.authenticate(params[:password_digest]) : false
+     @gamer ? @gamer.authenticate(params[:password]) : false
   end
 end
