@@ -1,5 +1,58 @@
-<h1>Welcome to Gamers Index.</h1>
-
-<div>
-There are currently <%= @gamers.length %> user(s) signed up!
+<div style="padding-top: 50px">
+    <div class="container cards">
+        <div class="row">
+            <div class="col-md-7">
+              <iframe src="https://player.twitch.tv/?channel=bigrichie2004" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" style="padding: 20px 1px"></iframe>
+            </div>
+            <div class="col-md-5">
+              <h3>Test Stuff</h3>
+              <h1>Welcome to Gamers Index.</h1>
+              There are currently <%= @gamers.length %> user(s) signed up!
+              <a href="#">Click here to join Twitch chat room!</a>
+            </div>
+        </div>
+    </div>
 </div>
+<br>
+<br>
+<div>
+  <hr>
+</div>
+<br>
+<br>
+<div style="padding-bottom: 50px">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 cards">
+        <br>
+        <a class="twitter-timeline" href="https://twitter.com/Enter_Player_2/lists/HEADLINES" height="600"></a>
+        <br>
+        <br>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-4 cards">
+        <br>
+        <a class="twitter-timeline"  href="https://twitter.com/hashtag/SuperSmashBros" data-widget-id="824518555899097088"></a>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-push-3 item text">
+                    <h3 style="text-align: center">Enter Player 2</h3>
+                    <p>EP2 is where you'll come to find the latest in the top eSports games and where you'll find the next challenge but only if you're Player 2. Why Player 2? Trust us, you want to be Player 2. Player 2 has something to prove. Player 2 is always hungry for the win. Player 2 wants to stay at the cabinet after Player 1 loses. Player 2 is always challenging... Always fighting. Are you a fighter? Do you have something to prove? Then get your quarter ready because it's time to Enter Player 2!</p>
+                </div>
+                <div class="col-md-12 col-sm-4 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">EP2 © 2016</p>
+        </div>
+    </footer>
+</div>
+<%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js' %>
+<%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js' %>
+<%= javascript_include_tag 'assets/javascripts/widget.js' %>

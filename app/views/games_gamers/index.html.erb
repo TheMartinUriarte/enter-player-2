@@ -1,0 +1,7 @@
+<div><%= @gamer.first_name %> is currently subscribed to these games</div>
+
+<ul>
+  <% @games.each do |subgames| %>
+    <li><%= subgames.name %></li>
+  <% end %>
+</ul>

@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    gamer_params = params.require(:gamer).permit(:email, :password_digest)
+    gamer_params = params.require(:gamer).permit(:email, :password)
     @gamer = Gamer.confirm(gamer_params)
     if @gamer
       login(@gamer)

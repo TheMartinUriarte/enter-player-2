@@ -1,6 +1,11 @@
+Games#Index!
+
 <% @games.each do |game| %>
   <div>
-    <h3><%= games.name %></h3>
+    <h3><%= game.title %></h3>
+    <% if current_gamer %>
+      <%= button_to "Subscribe", game_gamers_path(game) %>
+    <% end %>
   </div>
   <br>
 <% end %>

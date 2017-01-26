@@ -9,8 +9,12 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.create(game_params)
+    @game = Game.create(games_params)
     redirect_to games_path
+  end
+
+  def show
+    @game = Game.find_by_id(params[:id])
   end
 
   private

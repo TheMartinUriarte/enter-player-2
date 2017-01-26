@@ -12,5 +12,5 @@ module SessionsHelper
   def logout
     @current_gamer = session[:gamer_id] = nil
   end
-  
+
 end
