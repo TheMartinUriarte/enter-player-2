@@ -24,7 +24,7 @@ class GamersController < ApplicationController
 
   def gamer_params
     params.require(:gamer).permit(:username, :first_name, :last_name, :email,
-    :birthday, :password)
+    :birthday, :password_digest)
   end
 
 end
